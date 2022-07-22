@@ -1,11 +1,19 @@
 {
   "dependencies": {
+    "@tanstack/react-query": "^4.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "parcel": "^2.6.2"
-  }
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.6.2",
+    "process": "^0.11.10"
+  },
+  "scripts": {
+    "predeploy": "npx parcel build src/index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://andremadar95.github.io/"
 }
