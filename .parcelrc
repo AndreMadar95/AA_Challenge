@@ -1,0 +1,5 @@
+{
+    "transformers":{
+        "*.less":["@parcel/transformer-less"]
+    }
+}
