@@ -26,7 +26,6 @@
   "name": "andremadar95.github.io-aa_challenge",
   "description": "Challenge for AgencyAnalytics test",
   "version": "1.0.0",
-  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AndreMadar95/AA_Challenge.git"
