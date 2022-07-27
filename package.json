@@ -22,5 +22,6 @@
     "deploy": "gh-pages -d dist",
     "start": "parcel src/index.html --hmr-port 1234"
   },
-  "homepage": "https://andremadar95.github.io/"
+  "homepage": "https://andremadar95.github.io/AndreMadar95.github.io-AA_Challenge"
+
 }
