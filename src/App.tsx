@@ -62,7 +62,7 @@ const WeatherPanel = ({ city }: { city: Cities }) => {
         return (
           <>
             {(dayjs(key).isToday() || width < 1024) && (
-              <LargeCardWrapper>
+              <LargeCardWrapper key={key}>
                 <LargeCard
                   weather={val.weather.description}
                   temperature={val.temp}
@@ -81,6 +81,7 @@ const WeatherPanel = ({ city }: { city: Cities }) => {
             <>
               {!dayjs(key).isToday() && (
                 <SmallCard
+                key={key}
                   text={dayMap[dayjs(key).get("day")]}
                   icon={val.weather.icon}
                   weather={val.weather.description}
