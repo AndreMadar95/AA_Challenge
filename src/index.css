@@ -1,0 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');body,html, #app{
+    height: 100%;
+    width: 100%;
+    background-color: #eef6fb;
+    /* background-color: crimson; */
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

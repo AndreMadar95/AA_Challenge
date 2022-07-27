@@ -1,10 +1,16 @@
 {
   "dependencies": {
+    "@headlessui/react": "^1.6.6",
     "@tanstack/react-query": "^4.0.10",
+    "dayjs": "^1.11.4",
+    "postcss": "^8.4.14",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.1.6"
   },
   "devDependencies": {
+    "@parcel/transformer-less": "^2.6.2",
+    "@types/node": "^18.6.1",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "gh-pages": "^4.0.0",
@@ -13,7 +19,8 @@
   },
   "scripts": {
     "predeploy": "npx parcel build src/index.html",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "parcel src/index.html --hmr-port 1234"
   },
   "homepage": "https://andremadar95.github.io/"
 }
