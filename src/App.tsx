@@ -61,7 +61,7 @@ const WeatherPanel = ({ city }: { city: Cities }) => {
         const isToday = dayjs(key).isToday();
         return (
           <>
-            {(dayjs(key).isToday() || width < 1024) && (
+            {(isToday || width < 1024) && (
               <LargeCardWrapper key={key}>
                 <LargeCard
                   weather={val.weather.description}
@@ -75,6 +75,7 @@ const WeatherPanel = ({ city }: { city: Cities }) => {
         );
       })}
 
+  {/* Render small cards below Today section on larger devices */}
       {width >= 1024 && (
         <div className="flex w-full h-full lg:flex-row">
           {Object.entries(data).map(([key, val], index) => (
@@ -111,7 +112,7 @@ export function App() {
 
   return (
     <QueryClientProvider client={client}>
-      <main className="font-mono p-2 w-full h-full md:w-3/4 lg:w-1/2 flex md:justify-center md:items-center flex-col md:m-auto lg:max-w-xl min-h-screen">
+      <main className="font-mono p-2 w-full h-full md:w-3/4 lg:w-1/2 flex lg:justify-center md:items-center flex-col md:m-auto lg:max-w-xl min-h-screen">
         <Tab.Group>
           <Tab.List className={`flex gap-8 px-5 w-full justify-center mb-6`}>
             {CITIES.map((city) => (
