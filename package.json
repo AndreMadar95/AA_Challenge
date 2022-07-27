@@ -22,7 +22,7 @@
     "deploy": "gh-pages -d dist",
     "start": "parcel src/index.html --hmr-port 1234"
   },
-  "homepage": "https://andremadar95.github.io/AA_Challenge",
+  "homepage": "https://andremadar95.github.io/AA_Challenge/",
   "name": "andremadar95.github.io-aa_challenge",
   "description": "Challenge for AgencyAnalytics test",
   "version": "1.0.0",
